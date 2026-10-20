@@ -1,0 +1,97 @@
+body {
+    font-family: sans-serif;
+    padding: 20px;
+}
+
+.contenedor {
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+.carta {
+    position: relative;
+    width: 200px;
+    height: 300px;
+    border: 2px solid black;
+    border-radius: 15px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+
+.tarjeta {
+    border: 2px solid #333;
+    padding: 15px;
+    width: 250px;
+    text-align: center;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+}
+
+.tarjeta img {
+    width: 100%;
+    height: auto;
+}
+
+
+.tarjeta.resaltada {
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.3);
+    border-color: #0d6efd;
+}
+
+#cont_padre {
+    position: relative;
+    width: 284px;
+}
+
+
+dialog {
+    border: none;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    position: absolute;
+    margin: 0;
+    top: 60px;
+    left: 15px;
+    width: 210px;
+}
+
+
+dialog::backdrop {
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 8px;
+    backdrop-filter: blur(3px);
+}
+
+.producto {
+    margin: 0;
+    padding: 20px;
+    border: 2px solid #ccc;
+    transition: all 0.4s ease; 
+    width: 150px;
+    border-radius: 15px;
+    text-align: center;
+}
+
+
+.oferta {
+    background-color: #fff3cd;
+    border-color: #ffc107;
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.oferta h3 {
+    color: #856404;
+    text-transform: uppercase;
+}
+
+.oferta p {
+    font-weight: bold;
+}
